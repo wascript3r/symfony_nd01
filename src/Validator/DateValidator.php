@@ -25,6 +25,11 @@ class DateValidator
 		}
 	}
 
+	/**
+	 * @param \DateTime $date1
+	 * @param \DateTime $date2
+	 * @return int
+	 */
 	private function compareTo(\DateTime $date1, \DateTime $date2)
 	{
 		return $date1->format(self::DATE_FORMAT) <=> $date2->format(self::DATE_FORMAT);
